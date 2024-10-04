@@ -1,10 +1,10 @@
-# Your Name Here
+# Isaiah Timbers
 # UWYO COSC 1010
-# Submission Date
+# 10/3/24
 # Lab 03 
-# Lab Section: 
+# Lab Section: 13
 # Sources, people worked with, help given to: 
-# your
+# Braeden Kirby
 # comments
 # here
 
@@ -99,7 +99,28 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+sum_min = 0
+
+sum_max = 0
+
+tempcount = len(min_temps)
+for i in range(tempcount):
+    sum_min += min_temps / tempcount[i]
+    sum_max += max_temps / tempcount[i]
+    
+
+average_min_temp = sum_min / tempcount
+
+average_max_temp = sum_max / tempcount
+
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
+cold_day = min(min_temps)
 
+hot_day = max(max_temps)
+
+print("The coldest day in Laramie was", cold_day, "degrees last year")
+
+print("The hottest day in Laramie was" hot_day, "degrees last year")
