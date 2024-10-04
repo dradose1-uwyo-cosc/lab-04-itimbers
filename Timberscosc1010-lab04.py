@@ -105,14 +105,17 @@ sum_max = 0
 
 tempcount = len(min_temps)
 for i in range(tempcount):
-    sum_min += min_temps / tempcount[i]
-    sum_max += max_temps / tempcount[i]
+    sum_min += min_temps[i]
+    sum_max += max_temps[i]
     
 
 average_min_temp = sum_min / tempcount
 
 average_max_temp = sum_max / tempcount
 
+print("The average minimim temperature during 2023 in Laramie was", average_min_temp ,"degrees")
+
+print("The average maximum temperature during 2023 in Laramie was", average_max_temp , "degrees")
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
@@ -121,6 +124,8 @@ cold_day = min(min_temps)
 
 hot_day = max(max_temps)
 
+
+
 print("The coldest day in Laramie was", cold_day, "degrees last year")
 
-print("The hottest day in Laramie was" hot_day, "degrees last year")
+print("The hottest day in Laramie was", hot_day, "degrees last year")
